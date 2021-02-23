@@ -77,7 +77,7 @@ public class CMPPController extends AbstractController {
 
 	@Override
 	protected EndpointEntity getChild(ServerEndpoint serverEndpoint, AbstractConfigure configure) {
-		return serverEndpoint.getChild(configure.getAccount(),ChannelType.DUPLEX);
+		return serverEndpoint.getChild(configure.getAccount());
 	}
 
 }
